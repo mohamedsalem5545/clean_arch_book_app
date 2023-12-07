@@ -20,6 +20,7 @@ void main() async {
   setupServiceLocator();
   await Hive.openBox<BookEntity>(kFeaturedBox);
   await Hive.openBox<BookEntity>(kNewestBox);
+
   Bloc.observer = SimpleBlocObserver();
   runApp(const Bookly());
 }
@@ -55,6 +56,7 @@ class Bookly extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: ThemeData.dark().copyWith(
           scaffoldBackgroundColor: kPrimaryColor,
+          //ufudududud
           // textTheme:
           //   GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
         ),

@@ -15,6 +15,7 @@ import 'package:hive_flutter/adapters.dart';
 import 'core/utils/functions/setup_service_locator.dart';
 
 void main() async {
+  print('mohamed');
   await Hive.initFlutter();
   Hive.registerAdapter(BookEntityAdapter());
   setupServiceLocator();
